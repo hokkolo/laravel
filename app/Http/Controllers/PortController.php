@@ -13,15 +13,15 @@ class PortController extends Controller
 	}
 	function bio()
 	{
-		return view('bio')
+		return view('bio');
 	}
 	function projects()
 	{	
-		return view('projects')
+		return view('projects');
 	}
 	function contactme()
 	{
-		return view('contactme')
+		return view('contactme');
 	}
 
 

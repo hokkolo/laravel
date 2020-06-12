@@ -18,13 +18,13 @@
         <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Bio</a>
+        <a class="nav-link" href="/bio">Bio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="/projects">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Me</a>
+        <a class="nav-link" href="/contactme">Contact Me</a>
       </li>
     </ul>
   </div>
