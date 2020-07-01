@@ -21,7 +21,7 @@
         <a class="nav-link" href="/bio">Bio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/projects">Projects</a>
+        <a class="nav-link" href="/register">Register</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/contactme">Contact Me</a>
@@ -29,7 +29,7 @@
     </ul>
   </div>
 </nav>
-	<div>
+	<div class="container">
 	@yield('content')
 	</div>
 <!--	<footer>
