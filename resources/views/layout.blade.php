@@ -20,12 +20,21 @@
       <li class="nav-item">
         <a class="nav-link" href="/bio">Bio</a>
       </li>
+      @if(Session::get('user'))
       <li class="nav-item">
-        <a class="nav-link" href="/register">Register</a>
+        <a class="nav-link" href="#">Welcome | {{Session::get('user')}}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contactme">Contact Me</a>
-      </li>
+      @else
+         <li class="nav-item">
+           <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactme">Contact Me</a>
+          </li>
+      @endif
     </ul>
   </div>
 </nav>

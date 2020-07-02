@@ -16,11 +16,14 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-
-Route::get('/','PortController@index');
-Route::get('/bio','PortController@bio');
-Route::get('/projects','PortController@projects');
-Route::get('/contactme','PortController@contactme');
-Route::get('/login','PortController@login');
-Route::view('register','register');
-Route::post('register','PortController@register');
+Route::group(['middleware'=>"web"],function(){
+    Route::get('/','PortController@index');
+    Route::get('/bio','PortController@bio');
+    Route::get('/projects','PortController@projects');
+    Route::get('/contactme','PortController@contactme');
+    Route::get('/login','PortController@login');
+    Route::view('register','register');
+    Route::post('register','PortController@register');
+    Route::view('login','login');
+    Route::post('login','PortController@login');
+});
