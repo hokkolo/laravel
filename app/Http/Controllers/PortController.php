@@ -31,9 +31,9 @@ class PortController extends Controller
 	$user= new User;
 	$user->uname=$req->input('name');
 	$user->email=$req->input('email');
-	$user->pword=Crypt::encrypt($req->input('password'));
+	$user->pword=Crypt::encrypt($req->input('name'));
 	$user->save();
-	$req->session()->flash('status','User registered successfully');
+	$req->session()->put('user',$req->input('name'));
 	return redirect('/');
 	}
 

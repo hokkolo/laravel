@@ -22,10 +22,10 @@ class CustomAu
         {
             return redirect('/');
         }
-        else if($path!='login' && Session::get('user') && $path!='register' && Session::get('user'))
-        {
-            return redirect('/login');
-        }
+ //        else if($path!='login' && Session::get('user') && $path!='register' && Session::get('user'))
+ //       {
+ //           return redirect('/login');
+ //       }
         return $next($request);
     }
 }
